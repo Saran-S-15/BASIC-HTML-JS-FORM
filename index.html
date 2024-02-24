@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+</head>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+        <script src="./script.js"></script>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <form onsubmit="onSubmit(); return false;">
+                    <div class="row">
+                        <h1>USER</h1>
+                        <div class="col-lg-4">
+                            <label>Name:</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Mobile:</label>
+                            <input type="number" class="form-control" id="mobile" required>
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Country:</label>
+                            <select id="country" class="form-control" required>
+                                <option>--Select--</option>
+                                <option>India</option>
+                                <option>America</option>
+                                <option>Australia</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label>State:</label>
+                            <select id="state" class="form-control" required>
+                                <option>--Select--</option>
+                                <option>Tamil Nadu</option>
+                                <option>Us state-1</option>
+                                <option>Us state-2</option>
+                                <option>Burkley</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label>City:</label>
+                            <select id="city" class="form-control" required>
+                                <option>--Select--</option>
+                                <option>Chennai</option>
+                                <option>Newyork</option>
+                                <option>Washington</option>
+                                <option>Coimbatore</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="submit" value="Submit" class="form-control mt-3 btn btn-success">
+                        </div>
+                    </div>
+                </form>
+                </div>
+                <div class="col-lg-6">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">S.No</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Mobile No</th>
+                            <th scope="col">Country</th>
+                            <th scope="col">State</th>
+                            <th scope="col">City</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody id="userTableBody">
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
